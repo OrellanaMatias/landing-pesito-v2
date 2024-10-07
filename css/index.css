@@ -3,11 +3,11 @@
 :root{
 
     --btn-color: #fdfdfd;/* button color*/
-    --btn-bg: #155eef;/* button bg color*/
+    --btn-bg: #5b845b;/* button bg color*/
 
-    --primary-text-color: #155eef;
-    --link-hover: #155eef;
-    --input-hover-bd-color: #155eef;
+    --primary-text-color: #5b845b;
+    --link-hover: #5b845b;
+    --input-hover-bd-color: #5b845b;
 }
 
 
