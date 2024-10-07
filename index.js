@@ -70,13 +70,13 @@ numberTimeline.fromTo("#numbers-container", {
     scale: 1,
     duration: 3
 }).to("#installs", {
-    innerText: 10,
+    innerText: 9,
     duration: 3,
     snap: {
         innerText: 1
     },
 }, "<").to("#hours", {
-    innerText: 10,
+    innerText: 12,
     duration: 3,
     snap: {
         innerText: 1
