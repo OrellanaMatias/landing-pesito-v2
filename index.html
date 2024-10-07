@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>PE$ITO</title>
+        <meta name="description" content="" />
+        <link rel="icon" href="/assets/logo.ico" type="image/x-icon" />
+
+        <meta property="og:title" content="PE$ITO" />
+        <meta property="og:description" content="" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://github.com/OrellanaMatias" />
+        <meta property="og:image" content="" />
+
+        <link rel="stylesheet" href="./css/tailwind-build.css" />
+        <link rel="stylesheet" href="css/index.css" />
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+            integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body class="tw-flex tw-min-h-[100vh] tw-flex-col tw-bg-[#fff]">
+        <header
+            class="tw-absolute tw-top-0 tw-z-20 tw-flex tw-h-[60px] tw-w-full tw-bg-opacity-0 tw-px-[5%] max-lg:tw-mr-auto max-lg:tw-px-4 lg:tw-justify-around"
+        >
+            <a class="tw-h-[50px] tw-w-[50px] tw-p-[4px]" href="">
+                <img
+                    src="./assets/logo.png"
+                    alt="logo"
+                    class="tw-object tw-h-full tw-w-full"
+                />
+            </a>
+            <div
+                class="collapsible-header animated-collapse max-lg:tw-shadow-md"
+                id="collapsed-header-items"
+            >
+                <div
+                    class="tw-flex tw-h-full tw-w-max tw-gap-5 tw-text-base tw-text-black max-lg:tw-mt-[30px] max-lg:tw-flex-col max-lg:tw-place-items-end max-lg:tw-gap-5 lg:tw-mx-auto lg:tw-place-items-center"
+                >
+                    <a class="header-links" ></a>
+                    <a class="header-links" ></a>
+                    <a class="header-links" ></a>
+                    <a class="header-links" ></a>
+                    <a class="header-links" ></a>
+                </div>
+                <div
+                    class="tw-mx-4 tw-flex tw-place-items-center tw-gap-[20px] tw-text-base max-md:tw-w-full max-md:tw-flex-col max-md:tw-place-content-center"
+                >
+                    <a
+                        href=""
+                        aria-label="signup"
+                        class="tw-rounded-md tw-bg-primary tw-px-3 tw-py-2 tw-text-white tw-transition-transform tw-duration-[0.3s] hover:tw-translate-x-2"
+                    >
+                        <span> Descargar  </span>
+                        <i class="bi bi-android"></i>
+                    </a>
+                </div>
+            </div>
+            <button
+                class="bi bi-list tw-absolute tw-right-3 tw-top-3 tw-z-50 tw-text-3xl tw-text-black lg:tw-hidden"
+                onclick="toggleHeader()"
+                aria-label="menu"
+                id="collapse-btn"
+            ></button>
+        </header>
+
+        <section
+            class="tw-relative tw-flex tw-min-h-[100vh] tw-w-full tw-max-w-[100vw] tw-flex-col tw-overflow-hidden max-lg:tw-p-4 max-md:tw-mt-[50px]"
+        >
+            <div
+                class="tw-flex tw-h-full tw-min-h-[100vh] tw-w-full tw-place-content-center tw-gap-6 tw-p-[5%] max-xl:tw-place-items-center max-lg:tw-flex-col"
+            >
+                <div class="tw-flex tw-flex-col tw-place-content-center">
+                    <div
+                        class="tw-text-6xl tw-font-semibold tw-uppercase tw-leading-[80px] max-lg:tw-text-4xl max-md:tw-leading-snug"
+                    >
+                        <span> Controla tus gastos con</span>
+                        <br />
+                        <span class="tw-text-primary"> PE$ITO </span>
+                    </div>
+                    <div
+                        class="tw-mt-10 tw-max-w-[450px] tw-p-2 tw-text-justify max-lg:tw-max-w-full"
+                    >
+                        Nuestro software de control de gastos le permite registrar sus gastos y ingresos en un solo lugar, rápido y fácil.
+                    </div>
+
+                    <div
+                        class="tw-mt-4 tw-flex tw-place-items-center tw-gap-4 tw-overflow-hidden tw-p-2"
+                    >
+                        <a
+                            class="btn tw-transition-transform tw-duration-[0.3s] hover:tw-scale-x-[1.03]"
+                            href=""
+                        >
+                            Probar ahora
+                        </a>
+                        <a
+                            class="btn !tw-bg-[#c8cbf984] !tw-text-primary tw-transition-transform tw-duration-[0.3s] hover:tw-scale-x-[1.03]"
+                            href=""
+                        >
+                            <span>Descargar APK </span>
+                        </a>
+                    </div>
+                </div>
+
+                <div
+                    class="tw-flex tw-w-full tw-max-w-[50%] tw-place-content-center tw-place-items-center tw-overflow-hidden max-lg:tw-max-w-[unset]"
+                >
+                    <div
+                        class="tw-flex tw-max-h-[580px] tw-min-h-[450px] tw-min-w-[350px] tw-max-w-[650px] tw-overflow-hidden max-lg:tw-h-fit max-lg:tw-max-h-[320px] max-lg:tw-min-h-[180px] max-lg:tw-w-[320px] max-lg:tw-min-w-[320px]"
+                    >
+                        <img
+                            src="./assets/images/home/pesito.png"
+                            alt="Imagen de la app pesito, alguien de diseño que la haga, gracias"
+                            class="tw-h-full tw-w-full tw-object-contain"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section
+            class="tw-relative tw-flex tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden tw-p-6"
+            id="numbers"
+        >
+            <div class="tw-flex tw-flex-col tw-place-items-center tw-gap-8">
+                <h3 class="tw-text-3xl">Hablemos de números</h3>
+                <div
+                    class="tw-flex tw-w-full tw-place-content-center tw-gap-10 max-md:tw-flex-col"
+                    id="numbers-container"
+                >
+                    <div>
+                        <span class="tw-text-6xl max-lg:tw-text-4xl">
+                            <span id="installs">2</span><span> +</span>
+                        </span>
+                        <span
+                            class="tw-text-xl tw-font-medium tw-text-gray-800"
+                        >
+                            / Descargas
+                        </span>
+                    </div>
+                    <div class="tw-text-6xl">
+                        <span class="tw-text-6xl max-lg:tw-text-4xl">
+                            <span id="hours">3</span>
+                            <span>+</span>
+                        </span>
+                        <span
+                            class="tw-text-xl tw-font-medium tw-text-gray-800"
+                        >
+                            / Usuarios
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="tw-relative tw-flex tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden tw-p-6"
+            id=""
+        >
+            <div
+                class="tw-mt-8 tw-flex tw-flex-col tw-place-items-center tw-gap-5"
+            >
+                <div
+                    class="tw-mt-5 tw-flex tw-flex-col tw-gap-3 tw-text-center"
+                >
+                    <h3 class="tw-text-xl tw-text-primary">
+                        Desarrollado por estudiantes
+                    </h3>
+                    <h2 class="tw-text-4xl tw-font-semibold">Funcionalidades</h2>
+                </div>
+                <div
+                    class="tw-mt-6 tw-flex tw-max-w-[60%] tw-flex-wrap tw-place-content-center tw-gap-2 max-lg:tw-flex-col"
+                >
+                    <div
+                        class="tw-flex tw-h-[250px] tw-w-[350px] tw-flex-col tw-gap-2 tw-p-4 tw-text-center"
+                    >
+                        <i
+                            class="bi bi-piggy-bank tw-text-5xl tw-text-primary"
+                        ></i>
+                        <h3 class="tw-text-2xl tw-font-semibold">Registro de gastos</h3>
+                        <div class="tw-text-[#595959]">
+                            Permite registrar todos sus gastos, en el formato que prefiera y segun su categoria
+                        </div>
+                    </div>
+                    <div
+                        class="tw-flex tw-h-[250px] tw-w-[350px] tw-flex-col tw-gap-2 tw-p-4 tw-text-center"
+                    >
+                        <i
+                            class="bi bi-pie-chart tw-text-5xl tw-text-primary"
+                        ></i>
+                        <h3 class="tw-text-2xl tw-font-semibold">Visualizacion de gastos</h3>
+                        <div class="tw-text-[#595959]">
+                            Nuestro software le permite visualizar sus gastos de forma clara y sencilla.
+                        </div>
+                    </div>
+                    <div
+                        class="tw-flex tw-h-[250px] tw-w-[350px] tw-flex-col tw-gap-2 tw-p-4 tw-text-center"
+                    >
+                        <i
+                            class="bi bi-bar-chart-line tw-text-5xl tw-text-primary"
+                        ></i>
+                        <h3 class="tw-text-2xl tw-font-semibold">Estadisticas</h3>
+                        <div class="tw-text-[#595959]">
+                            En base a sus gastos, nuestra app representa sus gastos por categoria en forma de graficos
+                        </div>
+                    </div>
+                    <div
+                        class="tw-flex tw-h-[250px] tw-w-[350px] tw-flex-col tw-gap-2 tw-p-4 tw-text-center"
+                    >
+                        <i
+                            class="bi bi-shield-check tw-text-5xl tw-text-primary"
+                        ></i>
+                        <h3 class="tw-text-2xl tw-font-semibold">Seguridad</h3>
+                        <div class="tw-text-[#595959]">
+                            Sus datos estan seguros, nuestra app es segura xq yo lo digo
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tw-mt-5 tw-flex tw-w-full tw-flex-col tw-place-items-center tw-p-[2%]">
+            <h3 class="tw-text-3xl tw-font-medium tw-text-primary max-md:tw-text-2xl">
+                Nuestro equipo de trabajo
+            </h3>
+            <div class="tw-mt-8 tw-gap-10 tw-space-y-8 max-md:tw-columns-1 lg:tw-columns-2 xl:tw-columns-3">
+                <div class="tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid tw-flex-col tw-rounded-lg tw-p-4 tw-shadow-lg max-lg:tw-w-[320px]">
+                    <div class="tw-flex tw-place-items-center tw-gap-3">
+                        <div class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full tw-border-[2px] tw-border-solid tw-border-primary">
+                            <img src="./assets/images/people/barrionuevo.png" class="tw-h-full tw-w-full tw-object-cover" alt="women" />
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-1">
+                            <div class="tw-font-semibold">Barrionuevo Matias</div>
+                            <div class="tw-text-[#4b4b4b]">Diseñador, Tester</div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid tw-flex-col tw-rounded-lg tw-p-4 tw-shadow-lg max-lg:tw-w-[320px]">
+                    <div class="tw-flex tw-place-items-center tw-gap-3">
+                        <div class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full tw-border-[2px] tw-border-solid tw-border-primary">
+                            <img src="./assets/images/people/cabrera.png" class="tw-h-full tw-w-full tw-object-cover" alt="man" />
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-1">
+                            <div class="tw-font-semibold">Cabrera Joaquin</div>
+                            <div class="tw-text-[#4b4b4b]">Diseñador, Tester</div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid tw-flex-col tw-rounded-lg tw-p-4 tw-shadow-lg max-lg:tw-w-[320px]">
+                    <div class="tw-flex tw-place-items-center tw-gap-3">
+                        <div class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full tw-border-[2px] tw-border-solid tw-border-primary">
+                            <img src="./assets/images/people/flores.jpg" class="tw-h-full tw-w-full tw-object-cover" alt="man" />
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-1">
+                            <div class="tw-font-semibold">Flores Mijael</div>
+                            <div class="tw-text-[#4b4b4b]">Diseñador de base de datos, Tester, Programador</div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid tw-flex-col tw-rounded-lg tw-p-4 tw-shadow-lg max-lg:tw-w-[320px]">
+                    <div class="tw-flex tw-place-items-center tw-gap-3">
+                        <div class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full tw-border-[2px] tw-border-solid tw-border-primary">
+                            <img src="./assets/images/people/gonzalez.png" class="tw-h-full tw-w-full tw-object-cover" alt="woman" />
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-1">
+                            <div class="tw-font-semibold">Gonzalez Lautaro</div>
+                            <div class="tw-text-[#4b4b4b]">Programador, Tester</div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid tw-flex-col tw-rounded-lg tw-p-4 tw-shadow-lg max-lg:tw-w-[320px]">
+                    <div class="tw-flex tw-place-items-center tw-gap-3">
+                        <div class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full tw-border-[2px] tw-border-solid tw-border-primary">
+                            <img src="./assets/images/people/lucero.jpg" class="tw-h-full tw-w-full tw-object-cover" alt="man" />
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-1">
+                            <div class="tw-font-semibold">Lucero Ian</div>
+                            <div class="tw-text-[#4b4b4b]">Project Manager, Diseñador</div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid tw-flex-col tw-rounded-lg tw-p-4 tw-shadow-lg max-lg:tw-w-[320px]">
+                    <div class="tw-flex tw-place-items-center tw-gap-3">
+                        <div class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full tw-border-[2px] tw-border-solid tw-border-primary">
+                            <img src="./assets/images/people/mangado.jpg" class="tw-h-full tw-w-full tw-object-cover" alt="man" />
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-1">
+                            <div class="tw-font-semibold">Mangado Agustin</div>
+                            <div class="tw-text-[#4b4b4b]">Programador, Diseñador</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid tw-flex-col tw-rounded-lg tw-p-4 tw-shadow-lg max-lg:tw-w-[320px]">
+                    <div class="tw-flex tw-place-items-center tw-gap-3">
+                        <div class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full tw-border-[2px] tw-border-solid tw-border-primary">
+                            <img src="./assets/images/people/manzi.jpg" class="tw-h-full tw-w-full tw-object-cover" alt="man" />
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-1">
+                            <div class="tw-font-semibold">Manzi Rocio</div>
+                            <div class="tw-text-[#4b4b4b]">Jefa de diseño, Diseñadora</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid tw-flex-col tw-rounded-lg tw-p-4 tw-shadow-lg max-lg:tw-w-[320px]">
+                    <div class="tw-flex tw-place-items-center tw-gap-3">
+                        <div class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full tw-border-[2px] tw-border-solid tw-border-primary">
+                            <img src="./assets/images/people/orellana.png" class="tw-h-full tw-w-full tw-object-cover" alt="man" />
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-1">
+                            <div class="tw-font-semibold">Orellana Matias</div>
+                            <div class="tw-text-[#4b4b4b]">Programador</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid tw-flex-col tw-rounded-lg tw-p-4 tw-shadow-lg max-lg:tw-w-[320px]">
+                    <div class="tw-flex tw-place-items-center tw-gap-3">
+                        <div class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full tw-border-[2px] tw-border-solid tw-border-primary">
+                            <img src="./assets/images/people/palacio.png" class="tw-h-full tw-w-full tw-object-cover" alt="man" />
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-1">
+                            <div class="tw-font-semibold">Palacio Maria</div>
+                            <div class="tw-text-[#4b4b4b]">Diseñadora, Diseñadora de base de datos</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid tw-flex-col tw-rounded-lg tw-p-4 tw-shadow-lg max-lg:tw-w-[320px]">
+                    <div class="tw-flex tw-place-items-center tw-gap-3">
+                        <div class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full tw-border-[2px] tw-border-solid tw-border-primary">
+                            <img src="./assets/images/people/torres.jpg" class="tw-h-full tw-w-full tw-object-cover" alt="man" />
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-1">
+                            <div class="tw-font-semibold">Torres Marcos</div>
+                            <div class="tw-text-[#4b4b4b]">Programador, Diseñador</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid tw-flex-col tw-rounded-lg tw-p-4 tw-shadow-lg max-lg:tw-w-[320px]">
+                    <div class="tw-flex tw-place-items-center tw-gap-3">
+                        <div class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full tw-border-[2px] tw-border-solid tw-border-primary">
+                            <img src="./assets/images/people/zhulek.jpg" class="tw-h-full tw-w-full tw-object-cover" alt="man" />
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-1">
+                            <div class="tw-font-semibold">Zhulek Ramiro</div>
+                            <div class="tw-text-[#4b4b4b]">Diseñador de base de datos, Tester</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid tw-flex-col tw-rounded-lg tw-p-4 tw-shadow-lg max-lg:tw-w-[320px]">
+                    <div class="tw-flex tw-place-items-center tw-gap-3">
+                        <div class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full tw-border-[2px] tw-border-solid tw-border-primary">
+                            <img src="./assets/images/people/gutierrez.jpg" class="tw-h-full tw-w-full tw-object-cover" alt="man" />
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-1">
+                            <div class="tw-font-semibold">Gutierrez Javier</div>
+                            <div class="tw-text-[#4b4b4b]">Profesor, lider de proyecto, programador</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer
+            class="tw-mt-auto tw-flex tw-w-full tw-place-content-around tw-gap-3 tw-p-[5%] tw-px-[10%] tw-text-black max-md:tw-flex-col"
+        >
+            <div
+                class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-place-items-center tw-gap-6 max-md:tw-w-full"
+            >
+                <img
+                    src="./assets/logo.png"
+                    alt="logo"
+                    srcset=""
+                    class="tw-max-w-[120px]"
+                />
+                <div>
+                    Grupo 2
+                    <br />
+                    Emilio Lamarca
+                    <br />
+                    Buenos Aires, Argentina
+                </div>
+                <div class="tw-mt-3 tw-text-lg tw-font-semibold">Siguenos</div>
+                <div class="tw-flex tw-gap-4 tw-text-2xl">
+                    <a href="https://es-la.facebook.com/institutolamarca/" aria-label="Facebook">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a
+                        href="https://www.youtube.com/channel/UCHWlxHUU0zjd9uvI-LKbGhQ?view_as=subscriber"
+                        aria-label="Youtube"
+                    >
+                        <i class="bi bi-youtube"></i>
+                    </a>
+                    <a
+                        href="https://www.instagram.com/instituto_lamarca/"
+                        class="tw-h-[40px] tw-w-[40px]"
+                        aria-label="Instagram"
+                    >
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </body>
+
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"
+        integrity="sha512-B1lby8cGcAUU3GR+Fd809/ZxgHbfwJMp0jLTVfHiArTuUt++VqSlJpaJvhNtRf3NERaxDNmmxkdx2o+aHd4bvw=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    ></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"
+        integrity="sha512-AY2+JxnBETJ0wcXnLPCcZJIJx0eimyhz3OJ55k2Jx4RtYC+XdIi2VtJQ+tP3BaTst4otlGG1TtPJ9fKrAUnRdQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="./index.js"></script>
+</html>
